@@ -54,6 +54,6 @@ RUN chown -R suwayomi:suwayomi /home/suwayomi && \
 
 USER suwayomi
 EXPOSE 4567
-CMD ["/home/suwayomi/startup_script.sh"]
+CMD ["/home/suwayomi/startup_script.sh", "/entrypoint.sh"]
 
 # vim: set ft=dockerfile:
